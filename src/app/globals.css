@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #c72092;
+  --color-brand-purple: #6c14d0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Offsets in-page anchor jumps (#Products, #About, ...) so the fixed
+     navbar doesn't cover the target section's heading. */
+  scroll-padding-top: 4rem;
+}
+
+body {
+  /*
+   * Using the system font stack to keep the build self-contained.
+   * To use a custom webfont (e.g. Inter), bring back next/font/google
+   * in app/layout.tsx -- it was removed here only because this sandbox
+   * can't reach fonts.googleapis.com; it works normally in a real
+   * dev/deploy environment.
+   */
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
